@@ -19,7 +19,7 @@ Project này là hệ thống hỗ trợ sàng lọc bệnh da liễu từ hình
 
 ## Trang chủ
 
-![Home](<img width="1898" height="863" alt="image" src="https://github.com/user-attachments/assets/2d58a7b7-1d55-4f08-ad40-ec300a4fdfbc" />
+![Home](<img width="1898" height="863" alt="image" src="Ảnh chụp màn hình 2026-06-04 133821.png" />
 )
 
 ---
