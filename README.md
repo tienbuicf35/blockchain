@@ -19,29 +19,25 @@ Project này là hệ thống hỗ trợ sàng lọc bệnh da liễu từ hình
 
 ## Trang chủ
 
-![Home](<img width="1898" height="863" alt="image" src="Ảnh chụp màn hình 2026-06-04 133821.png" />
-)
+![Home](aa/Ảnh%20chụp%20màn%20hình%202026-06-04%20133821.png)
 
 ---
 
 ## Giao diện tải ảnh và nhập triệu chứng
 
-![Screening](<img width="1643" height="825" alt="image" src="https://github.com/user-attachments/assets/9832c0e2-7f79-4225-b979-3109620bb776" />
-)
+![Screening](aa/Ảnh%20chụp%20màn%20hình%202026-06-04%20134027.png)
 
 ---
 
 ## Kết quả phân tích AI
 
-![Result](<img width="1036" height="611" alt="image" src="https://github.com/user-attachments/assets/49f98c48-4833-422c-a2ff-88e01049c1e7" />
-)
+![Result](aa/Ảnh%20chụp%20màn%20hình%202026-06-04%20134059.png)
 
 ---
 
 ## Sổ cái Blockchain Hybrid
 
-![Ledger](<img width="493" height="856" alt="image" src="https://github.com/user-attachments/assets/854a3e11-c7a6-4ca6-bb04-fbe763925626" />
-)
+![Ledger](aa/Ảnh%20chụp%20màn%20hình%202026-06-04%20134121.png)
 
 ---
 
@@ -88,7 +84,7 @@ Payload      Hash + Metadata
 
 ## Sơ đồ kiến trúc
 
-![Architecture](docs/images/architecture.png)
+Sơ đồ luồng tổng quan được thể hiện trong khối kiến trúc ở trên.
 
 ---
 
