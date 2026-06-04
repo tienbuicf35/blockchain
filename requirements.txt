@@ -1,0 +1,8 @@
+torch
+transformers
+pillow
+fastapi
+uvicorn
+python-multipart
+web3
+eth-account

@@ -1,0 +1,366 @@
+[
+  {
+    "record_id": "1d14cc6f2a2b56af1c1955c2331aada40e92a8b7df0b953dd190f06f2269804d",
+    "timestamp": "2026-04-30T20:15:00Z",
+    "source": "web",
+    "image_name": "ISIC_0029491.jpg",
+    "image_sha256": "0f2dfc221706076360a2bfd0f3bf4984f8c49b2c4cbc09f87cb1b9ff6ae0905f",
+    "model_dir": "D:\\opencv\\test\\skin-disease-classifier",
+    "top_k": 6,
+    "predictions": [
+      {
+        "code": "NV",
+        "label": "Melanocytic Nevus",
+        "score": 0.99782395362854
+      },
+      {
+        "code": "MEL",
+        "label": "Melanoma",
+        "score": 0.0019419814925640821
+      },
+      {
+        "code": "BKL",
+        "label": "Benign Keratosis",
+        "score": 0.0002239932509837672
+      },
+      {
+        "code": "SCC",
+        "label": "Squamous Cell Carcinoma",
+        "score": 5.655293989548227e-06
+      },
+      {
+        "code": "AK",
+        "label": "Actinic Keratosis",
+        "score": 2.540653440519236e-06
+      },
+      {
+        "code": "BCC",
+        "label": "Basal Cell Carcinoma",
+        "score": 1.2256399486432201e-06
+      }
+    ]
+  },
+  {
+    "record_id": "ef0c0d160788bb0446dd464aecd5d0ebc92e3b5cf2a9c2296368069c87c31ed7",
+    "timestamp": "2026-04-30T20:17:31Z",
+    "source": "web",
+    "image_name": "ISIC_0029491.jpg",
+    "image_sha256": "0f2dfc221706076360a2bfd0f3bf4984f8c49b2c4cbc09f87cb1b9ff6ae0905f",
+    "model_dir": "D:\\opencv\\test\\skin-disease-classifier",
+    "top_k": 6,
+    "predictions": [
+      {
+        "code": "NV",
+        "label": "Melanocytic Nevus",
+        "score": 0.99782395362854
+      },
+      {
+        "code": "MEL",
+        "label": "Melanoma",
+        "score": 0.0019419814925640821
+      },
+      {
+        "code": "BKL",
+        "label": "Benign Keratosis",
+        "score": 0.0002239932509837672
+      },
+      {
+        "code": "SCC",
+        "label": "Squamous Cell Carcinoma",
+        "score": 5.655293989548227e-06
+      },
+      {
+        "code": "AK",
+        "label": "Actinic Keratosis",
+        "score": 2.540653440519236e-06
+      },
+      {
+        "code": "BCC",
+        "label": "Basal Cell Carcinoma",
+        "score": 1.2256399486432201e-06
+      }
+    ]
+  },
+  {
+    "record_id": "66c1a8839a65eb546d308a29069ceb1d7524f226526f99a67c90715c2cb035a9",
+    "timestamp": "2026-04-30T20:17:45Z",
+    "source": "web",
+    "image_name": "ISIC_0029491.jpg",
+    "image_sha256": "0f2dfc221706076360a2bfd0f3bf4984f8c49b2c4cbc09f87cb1b9ff6ae0905f",
+    "model_dir": "D:\\opencv\\test\\skin-disease-classifier",
+    "top_k": 6,
+    "predictions": [
+      {
+        "code": "NV",
+        "label": "Melanocytic Nevus",
+        "score": 0.99782395362854
+      },
+      {
+        "code": "MEL",
+        "label": "Melanoma",
+        "score": 0.0019419814925640821
+      },
+      {
+        "code": "BKL",
+        "label": "Benign Keratosis",
+        "score": 0.0002239932509837672
+      },
+      {
+        "code": "SCC",
+        "label": "Squamous Cell Carcinoma",
+        "score": 5.655293989548227e-06
+      },
+      {
+        "code": "AK",
+        "label": "Actinic Keratosis",
+        "score": 2.540653440519236e-06
+      },
+      {
+        "code": "BCC",
+        "label": "Basal Cell Carcinoma",
+        "score": 1.2256399486432201e-06
+      }
+    ]
+  },
+  {
+    "record_id": "38554535d61e358d31661f41d57bed1e5f7a111da47e2d2c596ed1b1b2574788",
+    "timestamp": "2026-04-30T20:20:52Z",
+    "source": "web-diagnosis",
+    "image_name": "ISIC_0029491.jpg",
+    "image_sha256": "0f2dfc221706076360a2bfd0f3bf4984f8c49b2c4cbc09f87cb1b9ff6ae0905f",
+    "model_dir": "D:\\opencv\\test\\skin-disease-classifier",
+    "top_k": 6,
+    "predictions": [
+      {
+        "code": "NV",
+        "label": "Melanocytic Nevus",
+        "score": 0.99782395362854
+      },
+      {
+        "code": "MEL",
+        "label": "Melanoma",
+        "score": 0.0019419814925640821
+      },
+      {
+        "code": "BKL",
+        "label": "Benign Keratosis",
+        "score": 0.0002239932509837672
+      },
+      {
+        "code": "SCC",
+        "label": "Squamous Cell Carcinoma",
+        "score": 5.655293989548227e-06
+      },
+      {
+        "code": "AK",
+        "label": "Actinic Keratosis",
+        "score": 2.540653440519236e-06
+      },
+      {
+        "code": "BCC",
+        "label": "Basal Cell Carcinoma",
+        "score": 1.2256399486432201e-06
+      }
+    ]
+  },
+  {
+    "record_id": "22312490833420e966c26778b376c3e9f0240b7384eab56ddc36a22d286f9c81",
+    "timestamp": "2026-04-30T20:20:57Z",
+    "source": "web-diagnosis",
+    "image_name": "ISIC_0029491.jpg",
+    "image_sha256": "0f2dfc221706076360a2bfd0f3bf4984f8c49b2c4cbc09f87cb1b9ff6ae0905f",
+    "model_dir": "D:\\opencv\\test\\skin-disease-classifier",
+    "top_k": 6,
+    "predictions": [
+      {
+        "code": "NV",
+        "label": "Melanocytic Nevus",
+        "score": 0.99782395362854
+      },
+      {
+        "code": "MEL",
+        "label": "Melanoma",
+        "score": 0.0019419814925640821
+      },
+      {
+        "code": "BKL",
+        "label": "Benign Keratosis",
+        "score": 0.0002239932509837672
+      },
+      {
+        "code": "SCC",
+        "label": "Squamous Cell Carcinoma",
+        "score": 5.655293989548227e-06
+      },
+      {
+        "code": "AK",
+        "label": "Actinic Keratosis",
+        "score": 2.540653440519236e-06
+      },
+      {
+        "code": "BCC",
+        "label": "Basal Cell Carcinoma",
+        "score": 1.2256399486432201e-06
+      }
+    ]
+  },
+  {
+    "record_id": "5df755fe35cc7e5a75aeb332fad2d0a82498324dcd8d9d3d50293cef995a3f6f",
+    "timestamp": "2026-04-30T20:21:03Z",
+    "source": "web-diagnosis",
+    "image_name": "ISIC_0029491.jpg",
+    "image_sha256": "0f2dfc221706076360a2bfd0f3bf4984f8c49b2c4cbc09f87cb1b9ff6ae0905f",
+    "model_dir": "D:\\opencv\\test\\skin-disease-classifier",
+    "top_k": 6,
+    "predictions": [
+      {
+        "code": "NV",
+        "label": "Melanocytic Nevus",
+        "score": 0.99782395362854
+      },
+      {
+        "code": "MEL",
+        "label": "Melanoma",
+        "score": 0.0019419814925640821
+      },
+      {
+        "code": "BKL",
+        "label": "Benign Keratosis",
+        "score": 0.0002239932509837672
+      },
+      {
+        "code": "SCC",
+        "label": "Squamous Cell Carcinoma",
+        "score": 5.655293989548227e-06
+      },
+      {
+        "code": "AK",
+        "label": "Actinic Keratosis",
+        "score": 2.540653440519236e-06
+      },
+      {
+        "code": "BCC",
+        "label": "Basal Cell Carcinoma",
+        "score": 1.2256399486432201e-06
+      }
+    ]
+  },
+  {
+    "record_id": "b2cb2469a9de221a5ab45b4be0ec6a1334d0da09fcff4c784c3195282cbcab43",
+    "timestamp": "2026-05-31T02:23:37Z",
+    "source": "web-diagnosis",
+    "image_name": "ISIC_0029308.jpg",
+    "image_sha256": "6af599c373aecf1685397258a19bcb74fa270d7cfc9d4136a345291155eb274b",
+    "model_dir": "D:\\opencv\\test\\skin-disease-classifier",
+    "top_k": 3,
+    "predictions": [
+      {
+        "code": "BKL",
+        "label": "Dày sừng lành tính",
+        "score": 0.9995712637901306,
+        "diagnosis": "Gợi ý dày sừng lành tính",
+        "overview": "Thường là tổn thương lành tính dạng mảng sáp hoặc sần, hay gặp ở người trưởng thành.",
+        "advice": [
+          "Theo dõi nếu tổn thương ổn định, không đau, không chảy máu.",
+          "Khám da liễu nếu tổn thương mới xuất hiện, đổi màu, tăng kích thước hoặc gây khó chịu.",
+          "Tránh ma sát mạnh và tránh tự bóc gỡ."
+        ],
+        "warning_signs": [
+          "Tăng nhanh, chảy máu, loét hoặc màu sắc không đều.",
+          "Khó phân biệt với nốt ruồi thay đổi hoặc u hắc tố."
+        ]
+      },
+      {
+        "code": "AK",
+        "label": "Dày sừng ánh sáng",
+        "score": 0.0003984873474109918,
+        "diagnosis": "Nghi ngờ dày sừng ánh sáng",
+        "overview": "Tổn thương thô ráp, bong vảy do tác hại ánh nắng kéo dài; một phần nhỏ có thể tiến triển thành ung thư tế bào vảy.",
+        "advice": [
+          "Che nắng kỹ, dùng kem chống nắng phổ rộng SPF 30+ mỗi ngày.",
+          "Đặt lịch khám da liễu để xác nhận và cân nhắc điều trị nếu tổn thương dai dẳng.",
+          "Theo dõi ảnh mỗi 4-6 tuần nếu chưa thể đi khám ngay."
+        ],
+        "warning_signs": [
+          "Tổn thương đau, loét, chảy máu hoặc dày lên nhanh.",
+          "Có nhiều mảng sần ở vùng thường phơi nắng."
+        ]
+      },
+      {
+        "code": "MEL",
+        "label": "U hắc tố da",
+        "score": 1.912653533509001e-05,
+        "diagnosis": "Nghi ngờ u hắc tố da",
+        "overview": "U hắc tố là ung thư da nguy hiểm, cần được đánh giá sớm, đặc biệt khi tổn thương thay đổi theo quy tắc ABCDE.",
+        "advice": [
+          "Ưu tiên khám da liễu càng sớm càng tốt để soi da và sinh thiết nếu cần.",
+          "Chụp ảnh rõ nét, đo kích thước và tránh trì hoãn nếu tổn thương đang lớn nhanh.",
+          "Kiểm tra thêm các nốt ruồi khác trên cơ thể."
+        ],
+        "warning_signs": [
+          "Bất đối xứng, bờ không đều, nhiều màu, đường kính lớn hoặc thay đổi nhanh.",
+          "Ngứa, đau, chảy máu, loét hoặc có nốt vệ tinh xung quanh."
+        ]
+      }
+    ]
+  },
+  {
+    "record_id": "8f475eded82b44ef29e572a5abc909e00850c994ce4df8d400b1cdab82ea31f5",
+    "timestamp": "2026-05-31T13:15:35Z",
+    "source": "web-diagnosis",
+    "image_name": "ISIC_0029307.jpg",
+    "image_sha256": "3ca43297c01c3e4f7785f494794c523006efbfdf171368520417fe4ed892feba",
+    "model_dir": "D:\\opencv\\test\\skin-disease-classifier",
+    "top_k": 3,
+    "predictions": [
+      {
+        "code": "NV",
+        "label": "Nốt ruồi sắc tố",
+        "score": 0.9999822378158569,
+        "diagnosis": "Gợi ý nốt ruồi sắc tố",
+        "overview": "Nốt ruồi sắc tố thường lành tính, nhưng cần theo dõi nếu có thay đổi về hình dạng, màu sắc hoặc kích thước.",
+        "advice": [
+          "Theo dõi định kỳ bằng ảnh trong cùng điều kiện ánh sáng.",
+          "Dùng chống nắng và tránh cháy nắng.",
+          "Khám da liễu nếu nốt ruồi khác biệt rõ so với các nốt còn lại."
+        ],
+        "warning_signs": [
+          "Thay đổi nhanh, bất đối xứng, bờ nham nhở hoặc nhiều màu.",
+          "Chảy máu, đau, ngứa kéo dài hoặc loét."
+        ]
+      },
+      {
+        "code": "BKL",
+        "label": "Dày sừng lành tính",
+        "score": 1.1289144822512753e-05,
+        "diagnosis": "Gợi ý dày sừng lành tính",
+        "overview": "Thường là tổn thương lành tính dạng mảng sáp hoặc sần, hay gặp ở người trưởng thành.",
+        "advice": [
+          "Theo dõi nếu tổn thương ổn định, không đau, không chảy máu.",
+          "Khám da liễu nếu tổn thương mới xuất hiện, đổi màu, tăng kích thước hoặc gây khó chịu.",
+          "Tránh ma sát mạnh và tránh tự bóc gỡ."
+        ],
+        "warning_signs": [
+          "Tăng nhanh, chảy máu, loét hoặc màu sắc không đều.",
+          "Khó phân biệt với nốt ruồi thay đổi hoặc u hắc tố."
+        ]
+      },
+      {
+        "code": "MEL",
+        "label": "U hắc tố da",
+        "score": 5.55001997781801e-06,
+        "diagnosis": "Nghi ngờ u hắc tố da",
+        "overview": "U hắc tố là ung thư da nguy hiểm, cần được đánh giá sớm, đặc biệt khi tổn thương thay đổi theo quy tắc ABCDE.",
+        "advice": [
+          "Ưu tiên khám da liễu càng sớm càng tốt để soi da và sinh thiết nếu cần.",
+          "Chụp ảnh rõ nét, đo kích thước và tránh trì hoãn nếu tổn thương đang lớn nhanh.",
+          "Kiểm tra thêm các nốt ruồi khác trên cơ thể."
+        ],
+        "warning_signs": [
+          "Bất đối xứng, bờ không đều, nhiều màu, đường kính lớn hoặc thay đổi nhanh.",
+          "Ngứa, đau, chảy máu, loét hoặc có nốt vệ tinh xung quanh."
+        ]
+      }
+    ]
+  }
+]
