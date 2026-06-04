@@ -19,25 +19,29 @@ Project này là hệ thống hỗ trợ sàng lọc bệnh da liễu từ hình
 
 ## Trang chủ
 
-![Home](docs/images/home.png)
+![Home](<img width="1898" height="863" alt="image" src="https://github.com/user-attachments/assets/2d58a7b7-1d55-4f08-ad40-ec300a4fdfbc" />
+)
 
 ---
 
 ## Giao diện tải ảnh và nhập triệu chứng
 
-![Screening](docs/images/screening.png)
+![Screening](<img width="1643" height="825" alt="image" src="https://github.com/user-attachments/assets/9832c0e2-7f79-4225-b979-3109620bb776" />
+)
 
 ---
 
 ## Kết quả phân tích AI
 
-![Result](docs/images/result.png)
+![Result](<img width="1036" height="611" alt="image" src="https://github.com/user-attachments/assets/49f98c48-4833-422c-a2ff-88e01049c1e7" />
+)
 
 ---
 
 ## Sổ cái Blockchain Hybrid
 
-![Ledger](docs/images/ledger.png)
+![Ledger](<img width="493" height="856" alt="image" src="https://github.com/user-attachments/assets/854a3e11-c7a6-4ca6-bb04-fbe763925626" />
+)
 
 ---
 
