@@ -421,5 +421,64 @@
         ]
       }
     ]
+  },
+  {
+    "record_id": "3a0b457a1405be3752032931fc1e3c689c2c7f3f1a54d5322757c16c6cc538ff",
+    "timestamp": "2026-06-04T06:40:18Z",
+    "source": "web-diagnosis",
+    "image_name": "tải xuống (3).jpg",
+    "image_sha256": "e1f11fe124d6c50fd1fb4cf4aca5927c90549fdbd9ad6e5ac7750116c5b26741",
+    "model_dir": "D:\\skin-disease-classifier",
+    "top_k": 3,
+    "predictions": [
+      {
+        "code": "SCC",
+        "label": "Ung thư biểu mô tế bào vảy",
+        "score": 0.6653507351875305,
+        "diagnosis": "Nghi ngờ ung thư biểu mô tế bào vảy",
+        "overview": "Ung thư tế bào vảy có thể phát triển từ vùng da tổn thương do nắng hoặc vết thương mạn tính và cần đánh giá y khoa.",
+        "advice": [
+          "Nên khám da liễu sớm, nhất là khi tổn thương dày, đau hoặc loét.",
+          "Giữ vùng tổn thương sạch, tránh cạy gãi và tránh nắng.",
+          "Ghi nhận thời gian xuất hiện, tốc độ lớn lên và triệu chứng kèm theo."
+        ],
+        "warning_signs": [
+          "Mảng/nốt dày sừng, loét lâu lành, đau hoặc chảy máu.",
+          "Tổn thương ở môi, tai, bàn tay hoặc trên sẹo/vết thương cũ."
+        ]
+      },
+      {
+        "code": "BKL",
+        "label": "Dày sừng lành tính",
+        "score": 0.22760483622550964,
+        "diagnosis": "Gợi ý dày sừng lành tính",
+        "overview": "Thường là tổn thương lành tính dạng mảng sáp hoặc sần, hay gặp ở người trưởng thành.",
+        "advice": [
+          "Theo dõi nếu tổn thương ổn định, không đau, không chảy máu.",
+          "Khám da liễu nếu tổn thương mới xuất hiện, đổi màu, tăng kích thước hoặc gây khó chịu.",
+          "Tránh ma sát mạnh và tránh tự bóc gỡ."
+        ],
+        "warning_signs": [
+          "Tăng nhanh, chảy máu, loét hoặc màu sắc không đều.",
+          "Khó phân biệt với nốt ruồi thay đổi hoặc u hắc tố."
+        ]
+      },
+      {
+        "code": "DF",
+        "label": "U xơ da",
+        "score": 0.09677258133888245,
+        "diagnosis": "Gợi ý u xơ da",
+        "overview": "Tổn thương lành tính dạng nốt chắc, có thể lõm nhẹ khi bóp hai bên.",
+        "advice": [
+          "Có thể theo dõi nếu nốt ổn định và không gây triệu chứng.",
+          "Khám da liễu nếu nốt đau, lớn nhanh, đổi màu hoặc ảnh hưởng sinh hoạt.",
+          "Không tự nặn hoặc chích vì dễ nhiễm trùng và sẹo."
+        ],
+        "warning_signs": [
+          "Đau tăng, chảy máu, loét hoặc phát triển nhanh.",
+          "Tổn thương có bờ không đều hoặc màu sắc thay đổi rõ."
+        ]
+      }
+    ]
   }
 ]
