@@ -364,9 +364,9 @@ Nếu tổn thương da có dấu hiệu chảy máu, loét, đổi màu, đau h
 
 # 👨‍💻 Tác giả
 
-Đề tài môn học: Xử lý ảnh / AI / Blockchain
+Đề tài môn học: Blockchain
 
-Sinh viên thực hiện: [Tên của bạn]
+Sinh viên thực hiện: [Bùi Văn Tiến]
 
 Năm thực hiện: 2025–2026
 
