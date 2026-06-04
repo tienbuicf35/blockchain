@@ -16,7 +16,7 @@ Project này là hệ thống hỗ trợ sàng lọc bệnh da liễu từ hình
 ---
 ## 📄 Poster đề tài
 
-![Poster](%20%E1%BA%A2nh%20ch%E1%BB%A5p%20m%C3%A0n%20h%C3%ACnh%202026-06-04%20142420.png)
+![Poster](%E1%BA%A2nh%20ch%E1%BB%A5p%20m%C3%A0n%20h%C3%ACnh%202026-06-04%20142420.png)
 # 🖥️ Demo giao diện
 
 ## Trang chủ
