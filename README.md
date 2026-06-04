@@ -1,135 +1,370 @@
-# Ứng dụng sàng lọc bệnh da liễu
+# 🩺 Ứng dụng sàng lọc bệnh da liễu sử dụng AI và Hybrid Blockchain
 
-Project này là app demo sàng lọc bệnh da từ ảnh, kết hợp checklist triệu chứng, chẩn đoán gợi ý và lời khuyên chăm sóc ban đầu.
+Project này là hệ thống hỗ trợ sàng lọc bệnh da liễu từ hình ảnh tổn thương da, kết hợp giữa Trí tuệ nhân tạo (AI), Blockchain Hybrid và cơ chế lưu trữ Off-chain nhằm tăng độ tin cậy, khả năng truy vết và bảo vệ tính toàn vẹn dữ liệu y tế.
 
-## Ý tưởng
+---
 
-Thay vì chỉ trả về top-k dự đoán từ ảnh, app chạy quy trình 2 bước:
+## 📌 Mục tiêu đề tài
 
-1. Phân loại ảnh tổn thương da.
-2. Kết hợp câu trả lời nhanh về triệu chứng để đưa ra mức độ cần ưu tiên xem lại.
+- Phân tích ảnh tổn thương da bằng AI.
+- Hỗ trợ sàng lọc ban đầu cho người dùng.
+- Kết hợp triệu chứng lâm sàng để tăng độ tin cậy.
+- Áp dụng Blockchain Hybrid để lưu vết kết quả.
+- Đảm bảo tính toàn vẹn dữ liệu bằng SHA-256.
+- Hỗ trợ truy xuất lịch sử sàng lọc.
 
-Kết quả screening gồm nhãn bệnh, chẩn đoán gợi ý, mô tả ngắn, dấu hiệu cần đi khám, lời khuyên chăm sóc và cảnh báo rằng công cụ không thay thế bác sĩ. Kết quả sàng lọc được quản lý bằng công nghệ Blockchain Hybrid với cơ chế lưu vết lai: dữ liệu hình ảnh nặng được lưu trữ dưới chuỗi (Off-chain) trên hệ thống phi tập trung IPFS, trong khi mã băm (Hash) và bệnh án tóm tắt được ghi lại trên chuỗi (On-chain).
+---
 
-## Tính năng
+# 🖥️ Demo giao diện
 
-- UI upload ảnh + checklist triệu chứng bằng tiếng Việt có dấu.
-- API FastAPI cho `predict`, `screen` và ledger.
-- CLI hỗ trợ `predict` và `screen`.
-- Dùng mô hình local `skin-disease-classifier`.
-- Có phân loại mức độ nguy hiểm: `low`, `moderate`, `high`.
-- Có hybrid blockchain: off-chain/IPFS lưu ảnh và payload dự đoán nặng, on-chain neo hash, bệnh án tóm tắt và metadata kiểm chứng.
+## Trang chủ
 
-## Nhãn bệnh
+![Home](docs/images/home.png)
 
-- `AK` - Dày sừng ánh sáng
-- `BCC` - Ung thư biểu mô tế bào đáy
-- `BKL` - Dày sừng lành tính
-- `DF` - U xơ da
-- `MEL` - U hắc tố da
-- `NV` - Nốt ruồi sắc tố
-- `SCC` - Ung thư biểu mô tế bào vảy
-- `VASC` - Tổn thương mạch máu
+---
 
-## Cài đặt
+## Giao diện tải ảnh và nhập triệu chứng
+
+![Screening](docs/images/screening.png)
+
+---
+
+## Kết quả phân tích AI
+
+![Result](docs/images/result.png)
+
+---
+
+## Sổ cái Blockchain Hybrid
+
+![Ledger](docs/images/ledger.png)
+
+---
+
+# ⚙️ Ý tưởng hoạt động
+
+Thay vì chỉ trả về top-k dự đoán từ ảnh, ứng dụng thực hiện quy trình nhiều bước:
+
+1. Người dùng tải ảnh tổn thương da.
+2. AI thực hiện phân loại bệnh.
+3. Người dùng trả lời bảng câu hỏi triệu chứng.
+4. Hệ thống đánh giá mức độ nguy cơ.
+5. Sinh báo cáo screening.
+6. Tạo SHA-256 Hash.
+7. Lưu hồ sơ chi tiết Off-chain.
+8. Ghi Hash và Metadata lên Blockchain.
+
+---
+
+# 🏗️ Kiến trúc hệ thống
+
+```text
+Người dùng
+      │
+      ▼
+ Upload ảnh
+      │
+      ▼
+ AI Classification
+      │
+      ▼
+ Screening Engine
+      │
+ ┌────┴─────────┐
+ │              │
+ ▼              ▼
+Off-chain    Blockchain
+ Storage       Ledger
+ │              │
+ ▼              ▼
+Payload      Hash + Metadata
+```
+
+---
+
+## Sơ đồ kiến trúc
+
+![Architecture](docs/images/architecture.png)
+
+---
+
+# 🤖 Công nghệ sử dụng
+
+## AI
+
+- PyTorch
+- HuggingFace Transformers
+- AutoImageProcessor
+- AutoModelForImageClassification
+
+## Backend
+
+- FastAPI
+- Uvicorn
+- Jinja2
+- Pydantic
+
+## Blockchain
+
+- SHA-256
+- Hybrid Blockchain
+- Solidity
+- Ethereum Compatible Networks
+- Hyperledger Fabric
+
+## Lưu trữ
+
+- Off-chain Storage
+- Local JSON Storage
+- Blockchain Ledger
+
+---
+
+# ✨ Tính năng
+
+- Upload ảnh tổn thương da.
+- AI phân tích bệnh da.
+- Hỗ trợ checklist triệu chứng.
+- Đánh giá mức độ nguy hiểm.
+- Sinh báo cáo screening.
+- Hybrid Blockchain lưu vết lịch sử.
+- Kiểm tra tính toàn vẹn dữ liệu.
+- Xuất JSON và CSV.
+- Hỗ trợ REST API.
+- Hỗ trợ CLI.
+
+---
+
+# 🏥 Các bệnh hỗ trợ
+
+| Mã | Tên bệnh |
+|-----|-----------|
+| AK | Dày sừng ánh sáng |
+| BCC | Ung thư biểu mô tế bào đáy |
+| BKL | Dày sừng lành tính |
+| DF | U xơ da |
+| MEL | U hắc tố da |
+| NV | Nốt ruồi sắc tố |
+| SCC | Ung thư biểu mô tế bào vảy |
+| VASC | Tổn thương mạch máu |
+
+---
+
+# 🔗 Blockchain Hybrid
+
+## Off-chain
+
+Lưu trữ:
+
+- Hình ảnh tổn thương da
+- Payload dự đoán
+- Kết quả screening
+- Xác suất dự đoán
+- Thông tin y tế chi tiết
+
+## On-chain
+
+Lưu trữ:
+
+- Record ID
+- SHA-256 Hash
+- Previous Hash
+- Timestamp
+- Metadata
+- Medical Summary
+- Digital Signature
+
+## Lợi ích
+
+- Chống sửa đổi dữ liệu.
+- Truy vết lịch sử screening.
+- Kiểm tra tính toàn vẹn dữ liệu.
+- Tăng độ tin cậy cho hệ thống.
+- Giảm tải cho Blockchain.
+
+---
+
+# 📡 API
+
+## Health Check
+
+```http
+GET /health
+```
+
+## Predict
+
+```http
+POST /predict
+```
+
+## Screen
+
+```http
+POST /screen
+```
+
+## Ledger
+
+```http
+GET /ledger
+```
+
+## Ledger UI
+
+```http
+GET /ledger/ui
+```
+
+## Validate Ledger
+
+```http
+GET /ledger/validate
+```
+
+## Export JSON
+
+```http
+GET /ledger/export.json
+```
+
+## Export CSV
+
+```http
+GET /ledger/export.csv
+```
+
+---
+
+# 📦 Cài đặt
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Chạy web
+---
+
+# 🚀 Chạy ứng dụng
+
+## Web
 
 ```bash
 uvicorn app.main:app --reload
 ```
 
-Mở:
+Mở trình duyệt:
 
 ```text
 http://127.0.0.1:8000/
 ```
 
-## Chạy CLI
+---
 
-Chỉ dự đoán:
+## CLI
+
+Dự đoán ảnh:
 
 ```bash
 python cli.py --image path/to/image.jpg
 ```
 
-Screening có triệu chứng:
+Screening:
 
 ```bash
 python cli.py --image path/to/image.jpg --mode screen --itch yes --bleed no --grow yes
 ```
 
-## API
+---
 
-- `GET /`
-- `GET /health`
-- `POST /predict`
-- `POST /screen`
-- `POST /screen-ui`
-- `GET /ledger`
-- `GET /ledger/ui`
-- `GET /ledger/validate`
-- `GET /ledger/export.json`
-- `GET /ledger/export.csv`
+# ⛓️ Smart Contract EVM
 
-## Ghi chú y khoa
+Contract:
 
-Đây chỉ là công cụ nghiên cứu/demo, không dùng làm chẩn đoán y khoa chính thức. Nếu tổn thương đau, chảy máu, loét, đổi màu, lớn nhanh hoặc khiến bạn lo lắng, hãy đi khám bác sĩ da liễu.
-
-## Kiến trúc blockchain
-
-- Off-chain/IPFS: lưu dữ liệu hình ảnh nặng và payload đầy đủ của từng lần screening, gồm ảnh sha256, model, top-k và predictions.
-- On-chain: lưu anchor block, mã băm (Hash), hash liên kết, bệnh án tóm tắt, chữ ký wallet và metadata cần kiểm tra.
-- Cơ chế lưu vết lai giúp minh bạch hóa lịch sử sàng lọc, chống sửa đổi hồ sơ y tế, tối ưu tốc độ truy xuất và cung cấp bằng chứng xác thực không thể chối bỏ cho quá trình chẩn đoán từ xa.
-- Backend mặc định vẫn hoạt động local; nếu set `LEDGER_BACKEND=evm` và cấu hình provider / contract / private key, app sẽ ghi anchor lên smart contract EVM thật.
-
-### Cấu hình EVM
-
-Bạn cần deploy contract trong `contracts/PredictionLedger.sol` lên một blockchain EVM compatible như Ethereum, Sepolia, Polygon, Base hoặc localhost chain.
-
-Biến môi trường cần thiết:
-
-- `WEB3_PROVIDER_URI`: RPC endpoint
-- `LEDGER_CONTRACT_ADDRESS`: địa chỉ contract đã deploy
-- `LEDGER_PRIVATE_KEY`: private key của wallet ký giao dịch
-- `LEDGER_SIGNER_ADDRESS`: địa chỉ wallet ký, nếu muốn ép khớp
-- `LEDGER_BACKEND=evm`: bật blockchain thật
-
-Nếu không có các biến này, app sẽ tiếp tục dùng local JSON ledger để phục vụ demo và test.
-
-### Cấu hình Hyperledger Fabric
-
-Repo có thêm backend `fabric` để neo hash kết quả screening lên Hyperledger Fabric, trong khi ảnh và payload y tế vẫn nằm off-chain trong `data/offchain/prediction_payloads.json`.
-
-Chạy app ở chế độ Fabric local-mirror:
-
-```bash
-set LEDGER_BACKEND=fabric
-set FABRIC_MSP_ID=Org1MSP
-uvicorn app.main:app --reload
+```text
+contracts/PredictionLedger.sol
 ```
 
-Chế độ này vẫn chạy được khi chưa có Fabric network thật. Ledger sẽ gắn `storage=fabric-private-data+off-chain-json` để mô phỏng kiến trúc Fabric + off-chain.
+Biến môi trường:
 
-Khi đã có Fabric network và đã cài Fabric peer CLI, cấu hình thêm:
-
-```bash
-set LEDGER_BACKEND=fabric
-set FABRIC_CHANNEL_NAME=mychannel
-set FABRIC_CHAINCODE_NAME=prediction-ledger
-set FABRIC_PEER_COMMAND=peer
-set FABRIC_MSP_ID=Org1MSP
+```env
+LEDGER_BACKEND=evm
+WEB3_PROVIDER_URI=
+LEDGER_CONTRACT_ADDRESS=
+LEDGER_PRIVATE_KEY=
+LEDGER_SIGNER_ADDRESS=
 ```
 
-Nếu muốn bắt buộc giao dịch Fabric phải thành công, thêm:
+Hỗ trợ:
 
-```bash
-set FABRIC_REQUIRE_COMMIT=true
+- Ethereum
+- Sepolia
+- Polygon
+- Base
+- Local Blockchain
+
+---
+
+# 🏢 Hyperledger Fabric
+
+```env
+LEDGER_BACKEND=fabric
+FABRIC_CHANNEL_NAME=mychannel
+FABRIC_CHAINCODE_NAME=prediction-ledger
+FABRIC_MSP_ID=Org1MSP
 ```
+
+---
+
+# 🔒 Bảo mật
+
+- SHA-256 Integrity Check
+- Blockchain Hash Chaining
+- Immutable Ledger
+- Medical Record Verification
+- Audit Trail
+
+---
+
+# 📊 Kết quả mẫu
+
+| Thành phần | Trạng thái |
+|------------|------------|
+| AI Classification | ✅ |
+| Screening Engine | ✅ |
+| SHA-256 | ✅ |
+| Hybrid Blockchain | ✅ |
+| Ledger Validation | ✅ |
+| CSV Export | ✅ |
+| JSON Export | ✅ |
+
+---
+
+# 🔮 Hướng phát triển
+
+- Tích hợp IPFS thực tế.
+- Triển khai Blockchain Mainnet.
+- Xây dựng Mobile App.
+- Tích hợp Telemedicine.
+- Hỗ trợ nhiều bệnh da liễu hơn.
+- Kết nối hồ sơ bệnh án điện tử.
+
+---
+
+# ⚠️ Ghi chú y khoa
+
+Đây là công cụ hỗ trợ nghiên cứu và sàng lọc ban đầu. Kết quả chỉ mang tính tham khảo và không thay thế cho chẩn đoán của bác sĩ chuyên khoa da liễu.
+
+Nếu tổn thương da có dấu hiệu chảy máu, loét, đổi màu, đau hoặc phát triển nhanh, người dùng nên đến cơ sở y tế để được thăm khám và điều trị kịp thời.
+
+---
+
+# 👨‍💻 Tác giả
+
+Đề tài môn học: Xử lý ảnh / AI / Blockchain
+
+Sinh viên thực hiện: [Tên của bạn]
+
+Năm thực hiện: 2025–2026
 
 Chaincode mẫu nằm trong `contracts/fabric`. Hàm chính:
 
