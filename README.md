@@ -16,7 +16,7 @@ Project này là hệ thống hỗ trợ sàng lọc bệnh da liễu từ hình
 ---
 ## 📄 Poster đề tài
 
-![Poster](Poster%20blockchain1.jpg)
+![Poster](Poster%20Ảnh chụp màn hình 2026-06-04 142420.png)
 # 🖥️ Demo giao diện
 
 ## Trang chủ
