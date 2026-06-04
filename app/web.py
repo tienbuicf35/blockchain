@@ -192,6 +192,7 @@ def render_homepage(
         <section class="result-card">
           <div class="card-kicker">Hybrid blockchain</div>
           <div class="big">Sổ cái on-chain / off-chain</div>
+          <div class="muted">Ảnh và payload nặng được lưu Off-chain trên IPFS; Hash, bệnh án tóm tắt và metadata kiểm chứng được neo On-chain để minh bạch, chống sửa đổi và làm bằng chứng xác thực cho chẩn đoán từ xa.</div>
           <div class="muted">Backend: <span class="mono">{backend}</span></div>
           <div class="muted">Trạng thái: <span class="{validation_class}">{escape(validation_text)}</span> | On-chain: {onchain_length} | Off-chain: {offchain_length}</div>
           <div class="muted">Head hash: <span class="mono">{escape(head_hash)}</span></div>
@@ -321,7 +322,7 @@ def render_homepage(
             <div>
               <div class="eyebrow">Skin Screening Studio</div>
               <h1>Sàng lọc ảnh da liễu kèm triệu chứng</h1>
-              <p>Dựa trên mô hình local và checklist nhanh, kết quả không chỉ là nhãn lớp mà còn có chẩn đoán gợi ý, mức ưu tiên xem lại và lời khuyên chăm sóc ban đầu. Lịch sử dự đoán được neo trên hybrid blockchain: dữ liệu nhạy cảm ở off-chain, hash và metadata kiểm chứng ở on-chain.</p>
+              <p>Dựa trên mô hình local và checklist nhanh, kết quả không chỉ là nhãn lớp mà còn có chẩn đoán gợi ý, mức ưu tiên xem lại và lời khuyên chăm sóc ban đầu. Lịch sử dự đoán được quản lý bằng Blockchain Hybrid: ảnh nặng lưu Off-chain trên IPFS, còn Hash và bệnh án tóm tắt được neo On-chain để chống sửa đổi và hỗ trợ truy xuất xác thực.</p>
               <div class="meta-row">
                 <span class="chip">{model_html}</span>
                 <span class="chip">8 nhóm bệnh da</span>
@@ -431,7 +432,7 @@ def render_ledger_page(
       <div class="wrap">
         <section class="hero">
           <h1>Toàn bộ lịch sử dự đoán</h1>
-          <div class="muted">Trang này hiển thị block on-chain kèm off-chain payload, trạng thái kiểm tra chuỗi và chữ ký wallet.</div>
+          <div class="muted">Trang này hiển thị block On-chain kèm payload Off-chain/IPFS, trạng thái kiểm tra chuỗi, chữ ký wallet và bằng chứng hash cho từng kết quả sàng lọc.</div>
           <div class="stats">
             <div class="stat-card"><div class="stat-label">Trạng thái</div><div class="stat-value">{valid_text}</div></div>
             <div class="stat-card"><div class="stat-label">Hash đầu chuỗi</div><div class="stat-value mono">{escape(head_hash)}</div></div>

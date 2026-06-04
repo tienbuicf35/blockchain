@@ -102,5 +102,18 @@
     "storage": "off-chain-json",
     "writer_address": "",
     "tx_hash": ""
+  },
+  {
+    "index": 8,
+    "timestamp": "2026-06-04T04:54:34Z",
+    "source": "web-diagnosis",
+    "offchain_record_id": "3993c106066845e4688d9e9a081f5deffb387e6ab0fa6e6c049826f02105b722",
+    "payload_hash": "2cbe6fdce33494919af4cea985fa02ce82b41c3d17842d082ff2b1414ecb0ebf",
+    "previous_hash": "cf1667041ea7d797bcea38e73759b37aa1b18e337a6a971c1ad9985f56429506",
+    "hash": "146c85c1b103da5eeb06f4bfcabd83874bdef323a2ab8aef4fc56614045936fd",
+    "signature": "15511ff634ca56eb1397c6c1c63e251f5ebd60e241734a9a8f425bdb67684a28",
+    "storage": "off-chain-json",
+    "writer_address": "",
+    "tx_hash": ""
   }
 ]

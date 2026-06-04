@@ -362,5 +362,64 @@
         ]
       }
     ]
+  },
+  {
+    "record_id": "3993c106066845e4688d9e9a081f5deffb387e6ab0fa6e6c049826f02105b722",
+    "timestamp": "2026-06-04T04:54:34Z",
+    "source": "web-diagnosis",
+    "image_name": "tải xuống (2).jpg",
+    "image_sha256": "dab4b557670a8ef93b2efb9fb01a72844a793a68c0b1aabd0a060e47f8b1082a",
+    "model_dir": "D:\\skin-disease-classifier",
+    "top_k": 3,
+    "predictions": [
+      {
+        "code": "VASC",
+        "label": "Tổn thương mạch máu",
+        "score": 0.3632616400718689,
+        "diagnosis": "Gợi ý tổn thương mạch máu",
+        "overview": "Có thể là nhóm tổn thương liên quan mạch máu như u máu hoặc dị dạng mạch; đa số lành tính nhưng vẫn cần theo dõi bối cảnh lâm sàng.",
+        "advice": [
+          "Theo dõi kích thước, màu sắc và khả năng chảy máu.",
+          "Khám da liễu nếu tổn thương mới xuất hiện, lan nhanh hoặc dễ chảy máu.",
+          "Tránh va chạm mạnh lên vùng tổn thương."
+        ],
+        "warning_signs": [
+          "Chảy máu nhiều, đau, loét hoặc tăng kích thước nhanh.",
+          "Tổn thương xuất hiện nhiều nơi hoặc kèm bầm tím bất thường."
+        ]
+      },
+      {
+        "code": "SCC",
+        "label": "Ung thư biểu mô tế bào vảy",
+        "score": 0.32653146982192993,
+        "diagnosis": "Nghi ngờ ung thư biểu mô tế bào vảy",
+        "overview": "Ung thư tế bào vảy có thể phát triển từ vùng da tổn thương do nắng hoặc vết thương mạn tính và cần đánh giá y khoa.",
+        "advice": [
+          "Nên khám da liễu sớm, nhất là khi tổn thương dày, đau hoặc loét.",
+          "Giữ vùng tổn thương sạch, tránh cạy gãi và tránh nắng.",
+          "Ghi nhận thời gian xuất hiện, tốc độ lớn lên và triệu chứng kèm theo."
+        ],
+        "warning_signs": [
+          "Mảng/nốt dày sừng, loét lâu lành, đau hoặc chảy máu.",
+          "Tổn thương ở môi, tai, bàn tay hoặc trên sẹo/vết thương cũ."
+        ]
+      },
+      {
+        "code": "BKL",
+        "label": "Dày sừng lành tính",
+        "score": 0.13812200725078583,
+        "diagnosis": "Gợi ý dày sừng lành tính",
+        "overview": "Thường là tổn thương lành tính dạng mảng sáp hoặc sần, hay gặp ở người trưởng thành.",
+        "advice": [
+          "Theo dõi nếu tổn thương ổn định, không đau, không chảy máu.",
+          "Khám da liễu nếu tổn thương mới xuất hiện, đổi màu, tăng kích thước hoặc gây khó chịu.",
+          "Tránh ma sát mạnh và tránh tự bóc gỡ."
+        ],
+        "warning_signs": [
+          "Tăng nhanh, chảy máu, loét hoặc màu sắc không đều.",
+          "Khó phân biệt với nốt ruồi thay đổi hoặc u hắc tố."
+        ]
+      }
+    ]
   }
 ]

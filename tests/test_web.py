@@ -59,6 +59,8 @@ class WebRenderTest(unittest.TestCase):
         )
         self.assertIn("Hybrid blockchain", html)
         self.assertIn("Sổ cái on-chain / off-chain", html)
+        self.assertIn("IPFS", html)
+        self.assertIn("bệnh án tóm tắt", html)
         self.assertIn("/ledger/ui", html)
         self.assertIn("Hợp lệ", html)
         self.assertIn("Head hash", html)
@@ -86,6 +88,7 @@ class WebRenderTest(unittest.TestCase):
         self.assertIn("Toàn bộ lịch sử dự đoán", html)
         self.assertIn("Chi tiết block", html)
         self.assertIn("Image SHA-256", html)
+        self.assertIn("Off-chain/IPFS", html)
         self.assertIn("ledger-details", html)
 
 

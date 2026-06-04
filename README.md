@@ -9,7 +9,7 @@ Thay vì chỉ trả về top-k dự đoán từ ảnh, app chạy quy trình 2 
 1. Phân loại ảnh tổn thương da.
 2. Kết hợp câu trả lời nhanh về triệu chứng để đưa ra mức độ cần ưu tiên xem lại.
 
-Kết quả screening gồm nhãn bệnh, chẩn đoán gợi ý, mô tả ngắn, dấu hiệu cần đi khám, lời khuyên chăm sóc và cảnh báo rằng công cụ không thay thế bác sĩ.
+Kết quả screening gồm nhãn bệnh, chẩn đoán gợi ý, mô tả ngắn, dấu hiệu cần đi khám, lời khuyên chăm sóc và cảnh báo rằng công cụ không thay thế bác sĩ. Kết quả sàng lọc được quản lý bằng công nghệ Blockchain Hybrid với cơ chế lưu vết lai: dữ liệu hình ảnh nặng được lưu trữ dưới chuỗi (Off-chain) trên hệ thống phi tập trung IPFS, trong khi mã băm (Hash) và bệnh án tóm tắt được ghi lại trên chuỗi (On-chain).
 
 ## Tính năng
 
@@ -18,7 +18,7 @@ Kết quả screening gồm nhãn bệnh, chẩn đoán gợi ý, mô tả ngắ
 - CLI hỗ trợ `predict` và `screen`.
 - Dùng mô hình local `skin-disease-classifier`.
 - Có phân loại mức độ nguy hiểm: `low`, `moderate`, `high`.
-- Có hybrid blockchain: off-chain lưu payload dự đoán, on-chain neo hash và metadata.
+- Có hybrid blockchain: off-chain/IPFS lưu ảnh và payload dự đoán nặng, on-chain neo hash, bệnh án tóm tắt và metadata kiểm chứng.
 
 ## Nhãn bệnh
 
@@ -82,8 +82,9 @@ python cli.py --image path/to/image.jpg --mode screen --itch yes --bleed no --gr
 
 ## Kiến trúc blockchain
 
-- Off-chain: lưu dữ liệu đầy đủ của từng lần screening, gồm ảnh sha256, model, top-k và predictions.
-- On-chain: lưu anchor block, hash liên kết, chữ ký wallet và metadata cần kiểm tra.
+- Off-chain/IPFS: lưu dữ liệu hình ảnh nặng và payload đầy đủ của từng lần screening, gồm ảnh sha256, model, top-k và predictions.
+- On-chain: lưu anchor block, mã băm (Hash), hash liên kết, bệnh án tóm tắt, chữ ký wallet và metadata cần kiểm tra.
+- Cơ chế lưu vết lai giúp minh bạch hóa lịch sử sàng lọc, chống sửa đổi hồ sơ y tế, tối ưu tốc độ truy xuất và cung cấp bằng chứng xác thực không thể chối bỏ cho quá trình chẩn đoán từ xa.
 - Backend mặc định vẫn hoạt động local; nếu set `LEDGER_BACKEND=evm` và cấu hình provider / contract / private key, app sẽ ghi anchor lên smart contract EVM thật.
 
 ### Cấu hình EVM
