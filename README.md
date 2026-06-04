@@ -3,9 +3,6 @@
 Project này là hệ thống hỗ trợ sàng lọc bệnh da liễu từ hình ảnh tổn thương da, kết hợp giữa Trí tuệ nhân tạo (AI), Blockchain Hybrid và cơ chế lưu trữ Off-chain nhằm tăng độ tin cậy, khả năng truy vết và bảo vệ tính toàn vẹn dữ liệu y tế.
 
 ---
-## 📄 Poster đề tài
-
-![Poster](Poster%20blockchain1.jpg)
 
 ## 📌 Mục tiêu đề tài
 
@@ -17,7 +14,9 @@ Project này là hệ thống hỗ trợ sàng lọc bệnh da liễu từ hình
 - Hỗ trợ truy xuất lịch sử sàng lọc.
 
 ---
+## 📄 Poster đề tài
 
+![Poster](Poster%20blockchain1.jpg)
 # 🖥️ Demo giao diện
 
 ## Trang chủ
